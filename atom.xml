@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
-  
+  <title>Cyrus-G</title>
+  <icon>https://www.gravatar.com/avatar/4ff06200bf2b7d3d78e450ef72ac599f</icon>
+  <subtitle>Live beautifully dream passionately and love completely</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
@@ -10,8 +10,8 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>John Doe</name>
-    
+    <name>Cyrus Gan</name>
+    <email>276683372@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
