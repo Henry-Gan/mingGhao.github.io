@@ -1,0 +1,788 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机网络最全面试题总结 | Cyrus-G</title><meta name="keywords" content="计网 面经"><meta name="author" content="Cyrus Gan,276683372@qq.com"><meta name="copyright" content="Cyrus Gan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="计算机网络面经总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络最全面试题总结">
+<meta property="og:url" content="https://mingghao.github.io/2021/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Cyrus-G">
+<meta property="og:description" content="计算机网络面经总结">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-06-02T15:34:30.000Z">
+<meta property="article:modified_time" content="2021-06-06T15:36:59.973Z">
+<meta property="article:author" content="Cyrus Gan">
+<meta property="article:tag" content="计网 面经">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/favicon.gif"><link rel="canonical" href="https://mingghao.github.io/2021/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%BB%E7%BB%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Cyrus Gan","link":"链接: ","source":"来源: Cyrus-G","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-center"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络最全面试题总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-06 23:36:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/icon.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Cyrus-G" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/favicon.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 主人公</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cyrus-G</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 主人公</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络最全面试题总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-02T15:34:30.000Z" title="发表于 2021-06-02 23:34:30">2021-06-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-06T15:36:59.973Z" title="更新于 2021-06-06 23:36:59">2021-06-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">10.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>31分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络最全面试题总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>[TOC]</p>
+<h2 id="OSI七层模型、TCP-IP5层模型以及每一层常用的协议"><a href="#OSI七层模型、TCP-IP5层模型以及每一层常用的协议" class="headerlink" title="OSI七层模型、TCP/IP5层模型以及每一层常用的协议"></a>OSI七层模型、TCP/IP5层模型以及每一层常用的协议</h2><p> OSI七层：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层</p>
+<p> TCP/IP五层：物理层、数据链路层、网络层、传输层、应用层</p>
+<p><strong>常用协议：</strong></p>
+<p>应用层：HTTP、SMTP、DNS、FTP</p>
+<p>传输层：TCP 、UDP</p>
+<p>网络层：ICMP 、IP、路由器、防火墙</p>
+<p>数据链路层：网卡、网桥、交换机</p>
+<p>物理层：中继器、集线器</p>
+<h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><ul>
+<li><p><strong>应用层</strong> ：</p>
+<p>为特定应用程序提供数据传输（交互）服务，<code>定义应用进程间通信的规则</code>。例如 HTTP、DNS、SMTP 等协议。传输的数据单元为<code>报文</code>。</p>
+<p><strong>表示层</strong> ：数据压缩、加密和表示，这使得应用程序不必关心在各台主机中数据内部格式不同的问题。</p>
+<p><strong>会话层</strong> ：建立、管理及终止网络上两个节点的会话，如服务器验证用户登录便是由会话层完成的</p>
+</li>
+<li><p><strong>传输层</strong> ：</p>
+<p>提供**<code>进程和进程之间</code>**的通信服务。由于应用层协议很多，定义通用的传输层协议就可以支持不断增多的应用层协议。运输层包括两种协议：</p>
+<ul>
+<li>传输控制协议 TCP，提供面向连接、可靠的数据传输服务，数据单位为<code>报文段</code>；</li>
+<li>用户数据报协议 UDP，提供无连接、尽最大努力的数据传输服务，数据单位为<code>用户数据报</code>。TCP 主要提供完整性服务，UDP 主要提供及时性服务。</li>
+</ul>
+</li>
+<li><p><strong>网络层</strong> ：<strong>进行逻辑地址寻址，实现不同网络之间的路径选择（选择合适的路由和交换节点）。</strong></p>
+<p><strong>为分组交换网上的不同<code>主机</code>提供数据传输服务</strong>，而传输层协议是为主机中的进程提供数据传输服务。网络层把传输层传递下来的报文段或者用户数据报封装成<code>分组</code>，也叫<code>IP数据报</code>。</p>
+</li>
+<li><p><strong>数据链路层</strong> ：</p>
+<p>网络层针对的还是主机之间的数据传输服务，而主机之间可以有很多链路，链路层协议就是为同一链路的主机提供数据传输服务。<strong>将网络层传下来的IP数据包组装成<code>帧</code>，并在相邻节点的<code>链路</code>上传送帧。</strong></p>
+</li>
+<li><p><strong>物理层</strong> ：</p>
+<p>**在传输媒体上实现透明传输<code>数据比特流</code>**，而不是指具体的传输媒体。物理层的作用是尽可能屏蔽传输媒体和通信手段的差异，使数据链路层感觉不到这些差异。</p>
+</li>
+</ul>
+<h2 id="浏览器输入URL并回车的过程以及相关协议，DNS查询过程。"><a href="#浏览器输入URL并回车的过程以及相关协议，DNS查询过程。" class="headerlink" title="浏览器输入URL并回车的过程以及相关协议，DNS查询过程。"></a>浏览器输入URL并回车的过程以及相关协议，DNS查询过程。</h2><blockquote>
+<p><strong>过程：</strong>DNS解析、TCP连接、发送HTTP请求、服务器处理请求并返回HTTP报文、浏览器渲染、结束</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602191635.png" alt="image-20210602191634999"></p>
+<ol>
+<li>DNS解析</li>
+<li>TCP连接</li>
+<li>发送HTTP请求</li>
+<li>服务器处理请求并返回HTTP报⽂</li>
+<li>浏览器解析渲染⻚⾯</li>
+<li>连接结束</li>
+</ol>
+<blockquote>
+<p>详见<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000006879700">https://segmentfault.com/a/1190000006879700</a></p>
+</blockquote>
+<h2 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h2><blockquote>
+<p>状态码的职责是当客户端向服务器端发送请求时，描述返回的请求结果。借助状态码，用户可以知道服务器端是正常处理了请求，还是出现了错误。</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602192901.png" alt="image-20210602192901405"></p>
+<blockquote>
+<p>常见状态码</p>
+</blockquote>
+<p> 100：Continue — 继续。客户端应继续其请求。</p>
+<p>200 ok  —请求成功，一般用于Get和Post请求</p>
+<p>204 no content  — 请求成功，但是没有结果返回</p>
+<p>206 partial content  — 客户端请求一部分资源，服务端成功响应，返回一范围资源</p>
+<p> 301：Moved Permanently — 永久重定向。</p>
+<p> 302：Found —临时性重定向（常用）。</p>
+<p> 400：Bad Request — 客户端请求的语法错误，服务器无法理解。</p>
+<p>401 unauthorized （需要认证（第一次返回）或者认证失败（第二次返回））</p>
+<p> 403：Forbideen — 服务器理解请求客户端的请求，但是拒绝执行此请求。</p>
+<p> 404：Not Found — 服务器无法根据客户端的请求找到资源（网页）。</p>
+<p> 500：Internal Server Error — 服务器内部错误，无法完成请求。</p>
+<p> 502：Bad Gateway — 作为网关或者代理服务器尝试执行请求时，从远程服务器接收到了无效的响应。</p>
+<h2 id="HTTP和HTTPS的区别"><a href="#HTTP和HTTPS的区别" class="headerlink" title="HTTP和HTTPS的区别"></a>HTTP和HTTPS的区别</h2><blockquote>
+<p><code>HTTP</code>（HyperText Transfer Protocol：超文本传输协议）</p>
+</blockquote>
+<ul>
+<li>基于 <code>TCP/IP</code> 通信协议</li>
+<li>用于 <code>B/S</code> 架构</li>
+<li>默认工作在 TCP 协议 <code>80</code> 端口</li>
+<li>HTTP 协议以明文方式发送内容，不提供任何方式的数据加密，如果攻击者截取了Web浏览器和网站服务器之间的传输报文，就可以直接读懂其中的信息，因此，HTTP协议不适合传输一些敏感信息，比如：信用卡号、密码等支付信息</li>
+</ul>
+<blockquote>
+<p><code>HTTPS</code>（Hypertext Transfer Protocol Secure：超文本传输安全协议）是一种透过计算机网络进行安全通信的传输协议。</p>
+</blockquote>
+<ul>
+<li>基于 HTTP 进行通信，但利用 <code>SSL/TLS</code> 来加密数据包。</li>
+<li>HTTPS 开发的主要目的，是<strong>提供对网站服务器的身份认证，保护交换数据的隐私与完整性</strong>。</li>
+<li>默认工作在 TCP 协议 <code>443</code> 端口，它的工作流程一般如以下方式：</li>
+</ul>
+<p> 1.首先客户端先给服务器发送一个请求（TCP三次握手）</p>
+<p> 2.服务器发送一个SSL证书给客户端，内容包括：证书的发布机构、有效期、所有者、签名以及公钥</p>
+<p> 3.客户端对发来的公钥进行真伪校验，校验为真则使用公钥对对称加密算法以及对称密钥进行加密</p>
+<p> 4.服务器端使用私钥进行解密并使用对称密钥加密确认信息发送给客户端</p>
+<p> 5.随后客户端和服务端就使用对称密钥进行信息传输</p>
+<blockquote>
+<p><strong>区别</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">HTTP</th>
+<th align="center">HTTPS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">默认端口80</td>
+<td align="center">HTTPS默认使用端口443</td>
+</tr>
+<tr>
+<td align="center">明文传输、数据未加密、安全性差</td>
+<td align="center">传输过程ssl加密、安全性较好</td>
+</tr>
+<tr>
+<td align="center">响应速度快、消耗资源少</td>
+<td align="center">响应速度较慢、消耗资源多、需要用到CA证书</td>
+</tr>
+</tbody></table>
+<p>1、<code>HTTP</code> 明文传输，数据都是未加密的，安全性较差，<code>HTTPS</code>（SSL+HTTP） 数据传输过程是加密的，安全性较好。</p>
+<p>2、使用 <code>HTTPS</code> 协议需要到 CA（Certificate Authority，数字证书认证机构） 申请证书，一般免费证书较少，因而需要一定费用。证书颁发机构如：Symantec、Comodo、GoDaddy 和 GlobalSign 等。</p>
+<p>3、<code>HTTP</code> 页面响应速度比 <code>HTTPS</code> 快，主要是因为 HTTP 使用 TCP 三次握手建立连接，客户端和服务器需要交换 3 个包，而 HTTPS除了 TCP 的三个包，还要加上 ssl 握手需要的 9 个包，所以一共是 12 个包。</p>
+<p>4、<code>http</code> 和 <code>https</code> 使用的是完全不同的连接方式，用的端口也不一样，前者是 <code>80</code>，后者是 <code>443</code>。</p>
+<p>5、HTTPS 其实就是建构在 SSL/TLS 之上的 HTTP 协议，所以，要比较 HTTPS 比 HTTP 要更耗费服务器资源。</p>
+<h2 id="加密算法"><a href="#加密算法" class="headerlink" title="加密算法"></a>加密算法</h2><p> <strong>对称加密算法：</strong></p>
+<p> 双方持有相同的密钥，且加密速度快，典型对称加密算法：DES、AES</p>
+<p> <strong>非对称加密算法：</strong></p>
+<p> 密钥成对出现（私钥、公钥），私钥只有自己知道，不在网络中传输；而公钥可以公开。相比对称加密速度较慢，典型的非对称加密算法有：RSA、DSA</p>
+<p> 密钥成对出现（私钥、公钥），私钥只有自己知道，不在网络中传输；而公钥可以公开。相比对称加密速度较慢，典型的非对称加密<a href="">算法</a>有：RSA、DSA</p>
+<h2 id="Http1-0、1-1、2-0"><a href="#Http1-0、1-1、2-0" class="headerlink" title="Http1.0、1.1、2.0"></a>Http1.0、1.1、2.0</h2><blockquote>
+<p>特点</p>
+</blockquote>
+<p> <strong>HTTP1.0：</strong></p>
+<ul>
+<li>1996年引入</li>
+<li>仅提供了最基本的认证，用户名和密码都未加密</li>
+<li>仅支持<strong>短连接</strong>，每次发送数据都会经过TCP三次握手和四次挥手，效率低</li>
+<li>只使用了<code>header</code>的<code>if=modified-Since</code>和<code>Expires</code>作为缓存失效的标准</li>
+<li>不支持<strong>断点续传</strong>，每次发送数据都会发送全部数据</li>
+<li>认为每台计算机都只能绑定一个IP地址，不支持虚拟网络</li>
+</ul>
+<p> <strong>HTTP1.1：</strong></p>
+<ul>
+<li>1999年引入</li>
+<li>使用了<strong>摘要算法</strong>进行身份验证</li>
+<li>默认使用<strong>长连接</strong>：只需要建立一次连接，可以传输多次数据，传输完成之后，只需要一次切断即可。通过请求头的keep-alive设置</li>
+<li>支持<strong>断点续传</strong>(状态码<code>206</code>)，通过请求头的Range实现</li>
+<li>使用了虚拟网络，在一台物理服务器上可以存在多个虚拟主机，共享一个IP地址</li>
+</ul>
+<p> <strong>HTTP2.0：</strong></p>
+<ul>
+<li>2015年建立</li>
+<li><strong>头部压缩</strong>：利用HPACK算法进行压缩，由于HTTP1.1头部经常出现Cookie、Accept、Sever、Range等字段可能会占用几百到几千字节，而body有时只有几十字节（头重身轻）</li>
+<li><strong>二进制格式</strong>：HTTP2.0选择了更靠近TCP/IP的二进制格式，抛弃了ASCII码，提高了解析效率</li>
+<li><strong>强化安全</strong>：HTTP2.0一般都跑在HTTPS上</li>
+<li><strong>多路复用</strong>：一个连接上可以有多个请求</li>
+</ul>
+<h3 id="http1-0和http1-1的主要区别："><a href="#http1-0和http1-1的主要区别：" class="headerlink" title="http1.0和http1.1的主要区别："></a><strong>http1.0和http1.1的主要区别：</strong></h3><ol>
+<li><p><strong>长连接：减少了建立和关闭连接的消耗和延迟。</strong></p>
+<p>HTTP1.1支持长连接和请求的流水线处理，在一个TCP连接上可以传送多个HTTP请求和响应，减少了建立和关闭连接的消耗和延迟，在HTTP1.1中默认开启长连接keep-alive，一定程度上弥补了HTTP1.0每次请求都要创建连接的缺点。HTTP1.0需要使用keep-alive参数来告知服务器端要建立一个长连接。</p>
+</li>
+<li><p><strong>节约带宽：1.1支持断点续传</strong></p>
+<p>HTTP1.0中存在一些浪费带宽的现象，例如客户端只是需要某个对象的一部分，而服务器却将整个对象送过来了，并且不支持断点续传功能。HTTP1.1支持只发送header信息（不带任何body信息），如果服务器认为客户端有权限请求服务器，则返回100，客户端接收到100才开始把请求body发送到服务器；如果返回401，客户端就可以不用发送请求body了节约了带宽。</p>
+</li>
+<li><p><strong>Host头处理：支持Host头域，不在以IP为请求方标志</strong></p>
+<p>在HTTP1.0中认为每台服务器都绑定一个唯一的IP地址，因此，请求消息中的URL并没有传递主机名（hostname），HTTP1.0没有host域。随着虚拟主机技术的发展，在一台物理服务器上可以存在多个虚拟主机（Multi-homed Web Servers），并且它们共享一个IP地址。HTTP1.1的请求消息和响应消息都支持host域，且请求消息中如果没有host域会报告一个错误（<code>400</code> Bad Request）</p>
+</li>
+<li><p> <strong>缓存处理：1.1添加更多的缓存控制策略（如：Entity tag，If-Match）</strong></p>
+</li>
+</ol>
+<p>   在HTTP1.0中主要使用header里的If-Modified-Since,Expires来做为缓存判断的标准，HTTP1.1则引入了更多的缓存控制策略例如Entity tag，If-Unmodified-Since, If-Match, If-None-Match等更多可供选择的缓存头来控制缓存策略。</p>
+<ol start="5">
+<li><p><strong>错误通知的管理</strong></p>
+<p>在HTTP1.1中新增了24个错误状态响应码，如409（Conflict）表示请求的资源与资源的当前状态发生冲突；410（Gone）表示服务器上的某个资源被永久性的删除。丰富的错误码更加明确各个状态</p>
+</li>
+</ol>
+<h3 id="http1-1和http2-0的主要区别："><a href="#http1-1和http2-0的主要区别：" class="headerlink" title="http1.1和http2.0的主要区别："></a><strong>http1.1和http2.0的主要区别：</strong></h3><ol>
+<li><p><strong>新的传输格式</strong>：2.0使用二进制格式，1.1依然使用基于文本格式​</p>
+</li>
+<li><p><strong>多路复用：</strong>做到同一个连接并发处理多个请求，而且并发请求的数量比HTTP1.1大了好几个数量级(最后根据每个request上的id号组合成正常的请求）</p>
+</li>
+<li><p><strong>header压缩</strong></p>
+<p>HTTP请求和响应都是由状态行、请求/响应头部、消息主体三部分组成。一般而言，消息主体都会经过gzip压缩，或者本身传输的就是压缩过后的二进制文件，但状态行和头部却没有经过任何压缩，直接以纯文本传输</p>
+</li>
+<li><p><strong>服务端推送：</strong>服务端推送是一种在客户端请求之前发送数据的机制</p>
+<p>为了改善延迟，HTTP2.0引入了server push， 它允许服务端推送资源给浏览器，在浏览器明确地请求之前，免得客户端再次创建连接发送请求到服务器端获取。 这样客户端可以直接从本地加载这些资源，不用再通过网络。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HTTP1.1不支持header数据的压缩，HTTP2.0使用HPACK算法对header的数据进行压缩，</span><br><span class="line">这样数据体积小了，在网络上传输就会更快。</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="重定向和转发的区别"><a href="#重定向和转发的区别" class="headerlink" title="重定向和转发的区别"></a>重定向和转发的区别</h2><p><strong>重定向：redirect：</strong></p>
+<p> 地址栏发生变化 </p>
+<p> 重定向可以访问其他站点（服务器）的资源</p>
+<p> 重定向是两次请求。不能使用request对象来共享数据</p>
+<p> <strong>转发：forward：</strong></p>
+<p> 转发地址栏路径不变</p>
+<p> 转发只能访问当前服务器下的资源</p>
+<p> 转发是一次请求，可以使用request对象共享数据</p>
+<h2 id="cookies和session的区别"><a href="#cookies和session的区别" class="headerlink" title="cookies和session的区别"></a>cookies和session的区别</h2><p> Cookie 和 Session都是用来跟踪浏览器用户身份的会话方式，但两者有所区别：</p>
+<p> Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器端。</p>
+<p> cookie不是很安全，别人可以分析存放在本地的COOKIE并进行欺骗,考虑到安全应当使用session。</p>
+<p> Cookie ⼀般⽤来保存⽤户信息，Session 的主要作⽤就是通过服务端记录⽤户的状态</p>
+<h2 id="Get和Post区别"><a href="#Get和Post区别" class="headerlink" title="Get和Post区别"></a>Get和Post区别</h2><ol>
+<li>Get是不安全的，因为在传输过程，数据被放在请求的URL中；Post的所有操作对用户来说都是不可见的。</li>
+<li>Get传送的数据量较小，这主要是因为受URL长度限制；Post传送的数据量较大，一般被默认为不受限制。</li>
+<li>Get限制Form表单的数据集的值必须为ASCII字符；而Post支持整个ISO10646字符集。</li>
+<li>Get执行效率却比Post方法好。Get是form提交的默认方法。</li>
+<li>GET产生一个TCP数据包；POST产生两个TCP数据包。（非必然，客户端可灵活决定）</li>
+</ol>
+<h2 id="请求行、请求头、请求体、响应行、响应头、响应体都包括什么"><a href="#请求行、请求头、请求体、响应行、响应头、响应体都包括什么" class="headerlink" title="请求行、请求头、请求体、响应行、响应头、响应体都包括什么"></a>请求行、请求头、请求体、响应行、响应头、响应体都包括什么</h2><blockquote>
+<p>一个HTTP请求报文由请求行（request line）、请求头部（headers）、空行（blank line）和请求数据（request body）4个部分组成。</p>
+</blockquote>
+<h2 id="———————————–"><a href="#———————————–" class="headerlink" title="==———————————–=="></a>==<strong>———————————–</strong>==</h2><h2 id="TCP、UDP协议的区别"><a href="#TCP、UDP协议的区别" class="headerlink" title="TCP、UDP协议的区别"></a>TCP、UDP协议的区别</h2><p>数据报文的结构</p>
+<p> <strong>基于TCP的协议：</strong>HTTP、FTP、SMTP</p>
+<p> <strong>基于UDP的协议：</strong>RIP、DNS、SNMP</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>UDP</th>
+<th>TCP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>是否连接</td>
+<td>无连接</td>
+<td>面向连接</td>
+</tr>
+<tr>
+<td>是否可靠</td>
+<td>不可靠传输，不使用流量控制和拥塞控制</td>
+<td>可靠传输，使用流量控制和拥塞控制</td>
+</tr>
+<tr>
+<td>是否有序</td>
+<td>无序</td>
+<td>有序，消息在传输过程中可能会乱序，TCP 会重新排序</td>
+</tr>
+<tr>
+<td>传输速度</td>
+<td>快</td>
+<td>慢</td>
+</tr>
+<tr>
+<td>连接对象个数</td>
+<td>支持一对一，一对多，多对一和多对多交互通信</td>
+<td>只能是一对一通信</td>
+</tr>
+<tr>
+<td>传输方式</td>
+<td>面向报文</td>
+<td>面向字节流</td>
+</tr>
+<tr>
+<td>首部开销</td>
+<td>首部开销小，仅8字节</td>
+<td>首部最小20字节，最大60字节</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>适用于实时应用（IP电话、视频会议、直播等）</td>
+<td>适用于要求可靠传输的应用，例如文件传输</td>
+</tr>
+</tbody></table>
+<ol>
+<li>TCP面向连接，UDP是无连接的，即发送数据之前不需要建立连接。</li>
+<li>TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达;UDP尽最大努力交付，即不保证可靠交付。</li>
+<li>TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流，UDP是面向报文的，UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）</li>
+<li>每一条TCP连接只能是点到点的，UDP支持一对一，一对多，多对一和多对多的交互通信。</li>
+<li>TCP首部开销20字节，UDP的首部开销小，只有8个字节。</li>
+<li>TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道。</li>
+</ol>
+<p><strong>应用场景：</strong></p>
+<p>CP 是面向连接，能保证数据的可靠性交付，因此经常用于：</p>
+<ul>
+<li>FTP文件传输</li>
+<li>HTTP / HTTPS</li>
+</ul>
+<p>UDP 面向无连接，它可以随时发送数据，再加上UDP本身的处理既简单又高效，因此经常用于：</p>
+<ul>
+<li>包总量较少的通信，如 DNS 、SNMP等</li>
+<li>视频、音频等多媒体通信</li>
+<li>广播通信</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602205408.png" alt="image-20210519180008296"></p>
+<h2 id="TCP三次握手过程以及每次握手后的状态改变，为什么三次？-为什么两次不行？"><a href="#TCP三次握手过程以及每次握手后的状态改变，为什么三次？-为什么两次不行？" class="headerlink" title="TCP三次握手过程以及每次握手后的状态改变，为什么三次？ 为什么两次不行？"></a>TCP三次握手过程以及每次握手后的状态改变，为什么三次？ 为什么两次不行？</h2><p>所谓三次握手(Three-way Handshake)，是指<strong>建立一个 TCP 连接时，需要客户端和服务器总共发送3个包</strong>。</p>
+<p>三次握手的目的是连接服务器指定端口，建立 TCP 连接，并同步连接双方的序列号和确认号，交换 TCP 窗口大小信息。</p>
+<h3 id="三次握手过程："><a href="#三次握手过程：" class="headerlink" title="三次握手过程："></a><strong>三次握手过程：</strong></h3><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210528204538.png" alt="img"></p>
+<ul>
+<li><p><strong>第一次握手：==客户端请求建立连接，向服务器端发送<code>请求连接报文段</code>==</strong></p>
+<p>首部的<code>同步位SYN</code>为0，同时选择一个随机数<code>seq=x</code>作为初始序号，并进入<code>SYN_SENT</code>（同步已发送状态），等待服务器确认</p>
+</li>
+<li><p><strong>第二次握手：==服务端收到连接请求报文后，如果同意建立连接，则向客户端发送<code>同步确认报文</code>,并为该TCP连接分配缓存和变量，服务器进入<code>SYN-RECV</code>（同步收到状态）==</strong></p>
+<ul>
+<li><code>SYN</code>=1：服务其B返回连接接收报文</li>
+<li><code>确认位ACK</code>=1：连接建立之后的ACK必须都置为1</li>
+<li><code>seq</code>=y(随机)：因为还没有数据，序号位随机产生</li>
+<li><code>ack</code>=x+1：与ACK成对出现，表示<strong>期待收到对方下一个报文段的第一个字节序号</strong>，之前客户端A发送的连接请求报文没有数据部分，即序号x标志着前面发的连接请求报文，所以服务端B想要收到的是序号为x+1的数据</li>
+</ul>
+</li>
+<li><p><strong>第三次握手：</strong></p>
+<p>客户端A收到了来自服务器B的同步确认报文，检测ack=x+1，以及ACK=1；确认无误后向服务器发送<strong>确认报文</strong>（ACK=1），确认号为 ack = y + 1，序列号为 seq = x + 1，客户端和服务器进入<code>ESTABLISHED</code>（已建立连接）状态，完成三次握手。</p>
+</li>
+</ul>
+<p>理想状态下，TCP连接一旦建立，在通信双方中的任何一方主动关闭连接之前，TCP 连接都将被一直保持下去。</p>
+<h3 id="为什么要三次握手，而不是两次？"><a href="#为什么要三次握手，而不是两次？" class="headerlink" title="为什么要三次握手，而不是两次？"></a>为什么要三次握手，而不是两次？</h3><p> <strong>三次握手的目的是建立可靠的通信信道，并保证客户端与服务端同时具备发送、接收数据的能力</strong></p>
+<p>主要有三个原因：</p>
+<ol>
+<li><p><strong>防止已过期的连接请求报文突然又传送到服务器，因而产生错误和资源浪费。</strong></p>
+<p>在双方两次握手即可建立连接的情况下，假设客户端发送 A 报文段请求建立连接，由于网络原因造成 A 暂时无法到达服务器，服务器接收不到请求报文段就不会返回确认报文段。</p>
+<p>客户端在长时间得不到应答的情况下重新发送请求报文段 B，这次 B 顺利到达服务器，服务器随即返回确认报文并进入 ESTABLISHED 状态，客户端在收到 确认报文后也进入 ESTABLISHED 状态，双方建立连接并传输数据，之后正常断开连接。</p>
+<p>此时姗姗来迟的 A 报文段才到达服务器，服务器随即返回确认报文并进入 ESTABLISHED 状态，但是已经进入 CLOSED 状态的客户端无法再接受确认报文段，更无法进入 ESTABLISHED 状态，这将导致服务器长时间单方面等待，造成资源浪费。</p>
+</li>
+<li><p><strong>三次握手才能让双方均确认自己和对方的发送和接收能力都正常。</strong>==（同时也是不是四次握手的主要原因）==</p>
+<p>第一次握手：客户端只是发送处请求报文段，什么都无法确认，而服务器可以确认自己的接收能力和对方的发送能力正常；</p>
+<p>第二次握手：客户端可以确认自己发送能力和接收能力正常，对方发送能力和接收能力正常；</p>
+<p>第三次握手：服务器可以确认自己发送能力和接收能力正常，对方发送能力和接收能力正常；</p>
+<p>可见三次握手才能让双方都确认自己和对方的发送和接收能力全部正常，这样就可以愉快地进行通信了。</p>
+</li>
+<li><p><strong>告知对方自己的初始序号值，并确认收到对方的初始序号值。</strong></p>
+<p>TCP 实现了可靠的数据传输，原因之一就是 TCP 报文段中维护了序号字段和确认序号字段，通过这两个字段双方都可以知道在自己发出的数据中，哪些是已经被对方确认接收的。这两个字段的值会在初始序号值得基础递增，如果是两次握手，只有发起方的初始序号可以得到确认，而另一方的初始序号则得不到确认。</p>
+</li>
+</ol>
+<h2 id="SYN泛洪攻击"><a href="#SYN泛洪攻击" class="headerlink" title="SYN泛洪攻击"></a>SYN泛洪攻击</h2><p>SYN洪泛攻击属于 DOS 攻击的一种，它利用 TCP 协议缺陷，通过发送大量的半连接请求，耗费 CPU 和内存资源。</p>
+<p>原理：</p>
+<ul>
+<li>在三次握手过程中，服务器发送 <code>[SYN/ACK]</code> 包（第二个包）之后、收到客户端的 <code>[ACK]</code> 包（第三个包）之前的 TCP 连接称为半连接（half-open connect），此时服务器处于 <code>SYN_RECV</code>（等待客户端响应）状态。如果接收到客户端的 <code>[ACK]</code>，则 TCP 连接成功，如果未接受到，则会<strong>不断重发请求</strong>直至成功。</li>
+<li>SYN 攻击的攻击者在短时间内<strong>伪造大量不存在的 IP 地址</strong>，向服务器不断地发送 <code>[SYN]</code> 包，服务器回复 <code>[SYN/ACK]</code> 包，并等待客户的确认。由于源地址是不存在的，服务器需要不断的重发直至超时。</li>
+<li>这些伪造的 <code>[SYN]</code> 包将长时间占用未连接队列，影响了正常的 SYN，导致目标系统运行缓慢、网络堵塞甚至系统瘫痪。</li>
+</ul>
+<p>检测：当在服务器上看到大量的半连接状态时，特别是源 IP 地址是随机的，基本上可以断定这是一次 SYN 攻击。</p>
+<p>防范：</p>
+<ul>
+<li>通过防火墙、路由器等过滤网关防护。</li>
+<li>通过加固 TCP/IP 协议栈防范，如增加最大半连接数，缩短超时时间。</li>
+<li>SYN cookies技术。SYN Cookies 是对 TCP 服务器端的三次握手做一些修改，专门用来防范 SYN 洪泛攻击的一种手段。</li>
+</ul>
+<h2 id="三次握手连接阶段，最后一次ACK包丢失，会发生什么？"><a href="#三次握手连接阶段，最后一次ACK包丢失，会发生什么？" class="headerlink" title="三次握手连接阶段，最后一次ACK包丢失，会发生什么？"></a>三次握手连接阶段，最后一次ACK包丢失，会发生什么？</h2><p><strong>服务端：</strong></p>
+<ul>
+<li>第三次的ACK在网络中丢失，那么服务端该TCP连接的状态为SYN_RECV,并且会根据 TCP的超时重传机制，会等待3秒、6秒、12秒后重新发送SYN+ACK包，以便客户端重新发送ACK包。</li>
+<li>如果重发指定次数之后，仍然未收到 客户端的ACK应答，那么一段时间后，服务端自动关闭这个连接。</li>
+</ul>
+<p><strong>客户端：</strong></p>
+<p>客户端认为这个连接已经建立，如果客户端向服务端发送数据，服务端将以RST包（Reset，标示复位，用于异常的关闭连接）响应。此时，客户端知道第三次握手失败。</p>
+<h2 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h2><p><strong>第一次挥手</strong>：==客户端发送**<code>连接释放报文段(FIN=1，ACK=1）</code>**，停止发送数据，主动关闭TCP连接==</p>
+<ul>
+<li><code>FIN</code>=1：客户端A请求释放连接</li>
+<li><code>seq</code>=u：即客户端上次发送的报文的最后一个字节的序号 + 1</li>
+<li><del>确认号 ack = k, 即服务端上次发送的报文的最后一个字节的序号 + 1</del></li>
+</ul>
+<p><strong>第二次挥手</strong>：==服务端收到连接释放报文后，立即发出<strong>确认报文</strong>（ACK=1），序列号 seq = k，确认号 ack = u + 1。==</p>
+<p>这时 TCP 连接处于<strong>半关闭状态</strong>，即客户端到服务端的连接已经释放了，但是服务端到客户端的连接还未释放。这表示客户端已经没有数据发送了，但是服务端可能还要给客户端发送数据。</p>
+<ul>
+<li><code>ACK</code>=1：连接建立之后的ACK必须都置为1，此时连接还没完全释放</li>
+<li><code>seq</code>=v：发了好多数据，这里只是用v指代一下</li>
+<li><code>ack</code>=u+1：期待收到客户端A发送的第一个字节序号为u+1的报文段</li>
+</ul>
+<p><strong>第三次挥手</strong>：==服务器发送完数据，发送<code>连接释放报文段</code>，主动关闭TCP连接==</p>
+<ul>
+<li><code>FIN</code>=1：服务器B发送连接释放报文，此时连接还没完全释放</li>
+<li><code>ACK</code>=1：连接建立之后的ACK必须都置为1</li>
+<li><code>seq</code>=w：发了好多数据，这里只是用w指代一下</li>
+<li><code>ack</code>=u+1：之前客户端A说发送的是第一个字节序号为u的数据，所以此时服务器B希望收到首字节为u+1的数据，但由于不发数据了，所以第二段第三段的ack都是u+1</li>
+</ul>
+<p><strong>第四次挥手</strong>：==客户端A收到来自服务器B的连接释放报文，立即发出<strong>确认报文</strong>（ACK=1），序列号 seq = u + 1，确认号为 ack = w + 1。</p>
+<ul>
+<li><code>ACK</code>=1：连接建立之后的ACK必须都置为1，此时连接还没完全释放</li>
+<li><code>seq</code>=u+1：之前发的数据时第u位数据，B也要第u+1位数据，所以我发第u+1位数据</li>
+<li><code>ack</code>=w+1：之前发送方(B)说发送的是第w位数据，所以我(A)要的是w+1位数据</li>
+</ul>
+<blockquote>
+<p>此时，客户端就进入了 <code>TIME-WAIT</code> 状态。</p>
+<p>注意此时客户端到 TCP 连接还没有释放，必须经过 2*MSL（最长报文段寿命）的时间后，才进入 <code>CLOSED</code> 状态。而服务端只要收到客户端发出的确认，就立即进入 <code>CLOSED</code> 状态。可以看到，服务端结束 TCP 连接的时间要比客户端早一些。</p>
+<p>主要原因是防止客户端返回的确认报文丢失，给2MSL时间，如果丢失，则服务端重传连接释放报文段，A在2MSL之内收到重传的报文段，A在重新返回确认，也重新启动2MSL计时器</p>
+</blockquote>
+<h2 id="为什么连接的时候是三次握手，关闭的时候却是四次握手"><a href="#为什么连接的时候是三次握手，关闭的时候却是四次握手" class="headerlink" title="为什么连接的时候是三次握手，关闭的时候却是四次握手"></a>为什么连接的时候是三次握手，关闭的时候却是四次握手</h2><p>因为当Server端收到Client端的SYN连接请求报文后，可以直接发送SYN+ACK报文。其中ACK报文是用来应答的，SYN报文是用来同步的。但是关闭连接时，当Server端收到FIN报文时，很可能并不会立即关闭SOCKET，所以只能先回复一个ACK报文，告诉Client端，”你发的FIN报文我收到了”。只有等到我Server端所有的报文都发送完了，我才能发送FIN报文，因此不能一起发送。故需要四步握手。</p>
+<p><strong>CLOSE-WAIT：</strong></p>
+<p> 这种状态的含义其实是表示在等待关闭</p>
+<p><strong>TIME-WAIT：</strong></p>
+<p> 为了解决网络的丢包和网络不稳定所带来的其他问题，确保连接方能在时间范围内，关闭自己的连接</p>
+<p><strong>如何查看TIME-WAIT状态的链接数量？</strong> </p>
+<p> netstat -an |grep TIME_WAIT|wc -l 查看连接数等待time_wait状态连接数</p>
+<p><strong>为什么会TIME-WAIT过多？解决方法是怎样的？</strong></p>
+<p> <strong>可能原因：</strong> 高并发短连接的TCP服务器上，当服务器处理完请求后立刻按照主动正常关闭连接</p>
+<p> <strong>解决：</strong>负载均衡服务器；Web服务器首先关闭来自负载均衡服务器的连接</p>
+<h2 id="为什么客户端的-TIME-WAIT-状态必须等待-2MSL-？"><a href="#为什么客户端的-TIME-WAIT-状态必须等待-2MSL-？" class="headerlink" title="为什么客户端的 TIME-WAIT 状态必须等待 2MSL ？"></a>为什么客户端的 TIME-WAIT 状态必须等待 2MSL ？</h2><p>主要有两个原因：</p>
+<ol>
+<li><p>确保 ACK 报文能够到达服务端，从而使服务端正常关闭连接。</p>
+<p>第四次挥手时，客户端第四次挥手的 ACK 报文不一定会到达服务端。服务端会超时重传 FIN/ACK 报文，此时如果客户端已经断开了连接，那么就无法响应服务端的二次请求，这样服务端迟迟收不到 FIN/ACK 报文的确认，就无法正常断开连接。</p>
+<p>MSL 是报文段在网络上存活的最长时间。客户端等待 2MSL 时间，即「客户端 ACK 报文 1MSL 超时 + 服务端 FIN 报文 1MSL 传输」，就能够收到服务端重传的 FIN/ACK 报文，然后客户端重传一次 ACK 报文，并重新启动 2MSL 计时器。如此保证服务端能够正常关闭。</p>
+<p>如果服务端重发的 FIN 没有成功地在 2MSL 时间里传给客户端，服务端则会继续超时重试直到断开连接。</p>
+</li>
+<li><p>防止已失效的连接请求报文段出现在之后的连接中。</p>
+</li>
+</ol>
+<p>TCP 要求在 2MSL 内不使用相同的序列号。客户端在发送完最后一个 ACK 报文段后，再经过时间 2MSL，就可以保证本连接持续的时间内产生的所有报文段都从网络中消失。这样就可以使下一个连接中不会出现这种旧的连接请求报文段。或者即使收到这些过时的报文，也可以不处理它。</p>
+<h2 id="TCP真的可靠吗？"><a href="#TCP真的可靠吗？" class="headerlink" title="TCP真的可靠吗？"></a>TCP真的可靠吗？</h2><p>面试官经常会问的一个问题是，如果TCP服务器宕机了，会发生什么？换句话说，TCP真的可靠吗？</p>
+<p>这个问题需要从两个方面回答：</p>
+<ol>
+<li>TCP是个可靠的协议，通过<code>校验</code>、<code>序号</code>、<code>确认</code>、<code>重传</code>保证了端到端的可靠。</li>
+<li>TTCP并不能保证应用层的可靠。</li>
+</ol>
+<blockquote>
+<p>数据报在传输过程中会出现的问题</p>
+</blockquote>
+<p><code>差错</code>：TCP通过首部的校验和，可以校验首部和和数据。这是一种端到端的校验，目的是检测数据在传输过程中的任何变化，如果收到对端的校验和有差错，TCP将这个包丢弃并且不确认。</p>
+<p><code>丢包</code>：TCP发出一个数据包后，启动一个定时器，等待对端确认收到这个数据包，如果不能及时收到这个确认，将重发这个报文。</p>
+<p><code>失序</code>：TCP承载于IP数据包来传输，IP包的到达可能会失序，因此TCP数据包的到达也可能失序，TCP对收到的数据包按照首部的序列号进行重新排序。</p>
+<p><code>重复</code>：IP数据包会发生重复，TCP接收端根据TCP首部的序列号将重复的数据丢弃。</p>
+<p>此外，确认数据包，也不能是确认了一个数据包再发送下一个数据包，这不利于并行的批量发送，我们可以批量的发送，再批量的确认。这里有两个问题需要考虑：1.接收方的处理能力，2.网络的处理能力。</p>
+<p>先来看看<strong>接收方的处理能力</strong>。当接收方的硬件能力不如发送方，或者是系统繁忙，那发送过去的报文只能丢弃。要限制发送方的发送速度，接收方就要告诉发送方它的处理能力，好让发送发方限制它的发送速度就可以了，这就是<strong>滑动窗口</strong>的由来。</p>
+<h2 id="TCP协议如何保证可靠性"><a href="#TCP协议如何保证可靠性" class="headerlink" title="TCP协议如何保证可靠性"></a>TCP协议如何保证可靠性</h2><p>TCP主要提供了检验和、序列号/确认应答、超时重传、滑动窗口、拥塞控制和 流量控制等方法实现了可靠性传输。</p>
+<ul>
+<li><p><strong>检验和：</strong>通过检验和的方式，接收端可以检测出来数据是否有差错和异常，假如有差错就会直接丢弃TCP段，重新发送。</p>
+</li>
+<li><p><strong>序列号/确认应答：</strong></p>
+<p>序列号的作用不仅仅是应答的作用，有了序列号能够将接收到的数据根据序列号排序，并且去掉重复序列号的数据。</p>
+<p>TCP传输的过程中，每次接收方收到数据后，都会对传输方进行确认应答。也就是发送ACK报文，这个ACK报文当中带有对应的确认序列号，告诉发送方，接收到了哪些数据，下一次的数据从哪里发。</p>
+</li>
+<li><p><strong>滑动窗口：</strong>滑动窗口既提高了报文传输的效率，也避免了发送方发送过多的数据而导致接收方无法正常处理的异常。</p>
+</li>
+<li><p><strong>超时重传：</strong>超时重传是指发送出去的数据包到接收到确认包之间的时间，如果超过了这个时间会被认为是丢包了，需要重传。最大超时时间是动态计算的。</p>
+</li>
+<li><p><strong>拥塞控制：</strong>在数据传输过程中，可能由于网络状态的问题，造成网络拥堵，此时引入拥塞控制机制，在保证TCP可靠性的同时，提高性能。</p>
+</li>
+<li><p><strong>流量控制：</strong>如果主机A 一直向主机B发送数据，不考虑主机B的接受能力，则可能导致主机B的接受缓冲区满了而无法再接受数据，从而会导致大量的数据丢包，引发重传机制。而在重传的过程中，若主机B的接收缓冲区情况仍未好转，则会将大量的时间浪费在重传数据上，降低传送数据的效率。所以引入流量控制机制，主机B通过告诉主机A自己接收缓冲区的大小，来使主机A控制发送的数据量。流量控制与TCP协议报头中的窗口大小有关。</p>
+</li>
+</ul>
+<h2 id="TCP的滑动窗口（流量控制）"><a href="#TCP的滑动窗口（流量控制）" class="headerlink" title="TCP的滑动窗口（流量控制）"></a>TCP的滑动窗口（流量控制）</h2><blockquote>
+<p>TCP利用滑动窗口实现<code>流量控制</code>，所谓流量控制，就是让发送方的发送速率不要太快，要让接收方来得及接受</p>
+</blockquote>
+<p>在进行数据传输时，如果传输的数据比较大，就需要拆分为多个数据包进行发送。TCP 协议需要对数据进行确认后，才可以发送下一个数据包。这样一来，就会在等待确认应答包环节浪费时间。</p>
+<p>为了避免这种情况，TCP引入了窗口概念。窗口大小指的是不需要等待确认应答包而可以继续发送数据包的最大值。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602215407.png" alt="img"></p>
+<p>从上面的图可以看到滑动窗口左边的是已发送并且被确认的分组，滑动窗口右边是还没有轮到的分组。</p>
+<p>滑动窗口里面也分为两块，一块是已经发送但是未被确认的分组，另一块是窗口内等待发送的分组。随着已发送的分组不断被确认，窗口内等待发送的分组也会不断被发送。整个窗口就会往右移动，让还没轮到的分组进入窗口内。</p>
+<p>可以看到滑动窗口起到了一个限流的作用，也就是说当前滑动窗口的大小决定了当前 TCP 发送包的速率，而滑动窗口的大小取决于拥塞控制窗口和流量控制窗口的两者间的最小值。</p>
+<h2 id="TCP的拥塞控制过程"><a href="#TCP的拥塞控制过程" class="headerlink" title="TCP的拥塞控制过程"></a>TCP的拥塞控制过程</h2><p>TCP 一共使用了四种算法来实现拥塞控制,通常<code>两两组合</code>使用</p>
+<ul>
+<li>慢开始 (slow-start)；</li>
+<li>拥塞避免 (congestion avoidance)；</li>
+<li>快速重传 (fast retransmit)；</li>
+<li>快速恢复 (fast recovery)。</li>
+</ul>
+<blockquote>
+<p>纵坐标<code>cwnd</code>：代表拥塞窗口大小，单位代表一个报文段，长度是一个最大报文段长度MSS，因此纵坐标为几就表示几个MSS，发送方并让自己的发送窗口等于拥塞窗口</p>
+<p>横坐标<code>传输轮次</code>：一个传输轮次代表发送了一批报文段并收到确认的时间，也就是一个往返时间RTT</p>
+</blockquote>
+<p><strong>慢开始：</strong></p>
+<ul>
+<li>当主机开始发送数据时，起始拥塞窗口大小<code>cwnd</code>=1，然后由小到大逐渐增加拥塞窗口的大小，每经过一个传输轮次以**<code>2的指数形式增长</code>**</li>
+<li><code>ssthresh</code>是慢开始门限值，代表此时注入的报文段就比较多了，接下来可能发生拥塞，需要开始慢速增加了，当<code>cwnd=ssthresh</code>时，进入<strong>拥塞避免阶段</strong>。</li>
+</ul>
+<p><strong>拥塞避免：线性增长，加法增大</strong></p>
+<ul>
+<li><p>拥塞避免算法让拥塞窗口cwnd缓慢增长，即每经过一个<code>往返时间RTT</code>就把发送方的拥塞窗口cwnd加1。这样拥塞窗口按<code>线性规律</code>缓慢增长（<code>加法增大</code>）。</p>
+</li>
+<li><p>到达<strong>网络拥塞后</strong>，瞬间将<code>cwnd</code>设置为1，同时调整原来的<code>ssthresh</code>的值到之前达到网络拥塞状态的1/2（cwnd/2），然后回到慢开始阶段重新执行</p>
+</li>
+</ul>
+<hr>
+<p><strong>快重传：</strong></p>
+<blockquote>
+<p>作用：让发送方尽早知道个别报文段出错（丢失、失序等）</p>
+<p>有时，个别报文段会在网络中丢失，但实际上并未发生拥塞，如果发送方迟迟收不到确认，就会发生超时，误以为网络发生了拥塞，这就导致发送方错误地重新开始<code>慢开始</code>,<code>cwnd=1</code>，大幅降低传输效率</p>
+</blockquote>
+<p>快重传要求接收方应<strong>立即发出确认报文</strong>（包括收到了失序的报文段），而不要等到自己发送数据时捎带确认。</p>
+<p>快重传规定：发送方只要一连收到接收方的<code>三个重复确认报文</code>(重复确认的是上一个已接收了的报文）就应当立即重传对方尚未收到的报文段，而不必继续等待设置的重传计时器时间到期。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602215347.png" alt="img"></p>
+<p><strong>快恢复：乘法减小</strong></p>
+<p>主要是配合快重传。当发送方连续收到三个重复确认时，就执行“乘法减小”算法，<code>ssthresh</code>降到现在<code>cwnd</code>的一半（预防网络发生阻塞），再重新<code>线性增长</code>（此时网络并未）</p>
+<p>注意这里不像<strong>慢开始&amp;拥塞避免</strong>重新执行慢开始算法，因为如果网络出现拥塞的话就不会收到好几个重复的确认，收到三个重复确认说明网络状况还可以。<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602215333.png" alt="img"></p>
+<p>课本例图</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602221356.png"></p>
+<h2 id="TCP粘包问题"><a href="#TCP粘包问题" class="headerlink" title="TCP粘包问题"></a>TCP粘包问题</h2><p>1️⃣ 发送方产生粘包</p>
+<p>采用TCP协议传输数据的客户端与服务器经常是保持一个长连接的状态（一次连接发一次数据不存在粘包），双方在连接不断开的情况下，可以一直传输数据；但当发送的数据包过于的小时，那么TCP协议默认的会启用Nagle算法，将这些较小的数据包进行合并发送（缓冲区数据发送是一个堆压的过程）；这个合并过程就是在发送缓冲区中进行的，也就是说数据发送出来它已经是粘包的状态了。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602203252.png" alt="image-20210513180627862"></p>
+<p>2️⃣ 接收方产生粘包</p>
+<p>接收方采用TCP协议接收数据时的过程是这样的：数据到底接收方，从网络模型的下方传递至传输层，传输层的TCP协议处理是将其放置接收缓冲区，然后由应用层来主动获取（C语言用recv、read等函数）；这时会出现一个问题，就是我们在程序中调用的读取数据函数不能及时的把缓冲区中的数据拿出来，而下一个数据又到来并有一部分放入的缓冲区末尾，等我们读取数据时就是一个粘包。（放数据的速度 &gt; 应用层拿数据速度）</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602203237.png" alt="image-20210513180723344"></p>
+<h2 id="TCP、UDP、IP、以太网报文格式以及重要字段"><a href="#TCP、UDP、IP、以太网报文格式以及重要字段" class="headerlink" title="TCP、UDP、IP、以太网报文格式以及重要字段"></a><strong>TCP、UDP、IP、以太网报文格式以及重要字段</strong></h2><h3 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h3><p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/Cyrus-G/CloudImage/raw/master/img/20210602211314.png" alt="image-20210504172656056"></p>
+<ul>
+<li><p><strong>源端口</strong>和<strong>目的端口</strong>：主要是决定数据发给哪个应用程序的。</p>
+</li>
+<li><p><strong>序列号</strong>：序号主要是为了解决乱序问题。</p>
+</li>
+<li><p><strong>确认号</strong>：发送出去的包都需要确认，如果没有收到对方的确认包，就重新发送，直到送达。</p>
+</li>
+<li><p><strong>首部长度</strong>：TCP头部的大小。</p>
+</li>
+<li><p><strong>标志位</strong>：</p>
+<ul>
+<li>CWR：拥塞窗口减少。</li>
+<li>ECE：显示拥塞提醒回应。</li>
+<li>URG：紧急指针。</li>
+<li>ACK：设置为1时，确认号有效。</li>
+<li>PSH：设置为1时，接收方应尽快将这个报文交给应用层。</li>
+<li>RST：为1时，表示出现严重差错，必须释放连接，重连。</li>
+<li>SYN：为1时，发起一个连接。</li>
+<li>FIN：为1时，关闭一个连接。</li>
+</ul>
+</li>
+<li><p><strong>窗口大小</strong>：主要用于流量控制。</p>
+</li>
+<li><p><strong>校验和</strong>：对TCP头和数据进行校验。</p>
+</li>
+<li><p><strong>紧急指针</strong>：当URG位为1，这个指针有效。</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:276683372@qq.com">Cyrus G</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://mingghao.github.io/2021/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%BB%E7%BB%93/">https://mingghao.github.io/2021/06/02/计算机网络总结/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://mingghao.github.io" target="_blank">Cyrus-G</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%BD%91-%E9%9D%A2%E7%BB%8F/">计网 面经</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/02/JVM%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93-%E9%AB%98%E9%A2%91/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/gallery/wallpaper/0494e945880511ebb6edd017c2d2eca2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JVM面经总结--高频</div></div></a></div><div class="next-post pull-right"><a href="/2021/06/06/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/favicon.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Cyrus Gan</div><div class="author-info__description">分享技术，记录生活</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=276683372&amp;site=qq&amp;menu=yes"><i class="fab fa-qq"></i><span>与我交谈</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mingghao" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:276683372@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://blog.csdn.net/m0_51190106" target="_blank" title="CSDN"><i class="iconfont icon-csdn"></i></a><a class="social-icon" href="https://blog.csdn.net/m0_51190106" target="_blank" title="QQ"><i class="iconfont icon-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">加入收藏不迷路哦~</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E3%80%81TCP-IP5%E5%B1%82%E6%A8%A1%E5%9E%8B%E4%BB%A5%E5%8F%8A%E6%AF%8F%E4%B8%80%E5%B1%82%E5%B8%B8%E7%94%A8%E7%9A%84%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.</span> <span class="toc-text">OSI七层模型、TCP&#x2F;IP5层模型以及每一层常用的协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">OSI七层模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BE%93%E5%85%A5URL%E5%B9%B6%E5%9B%9E%E8%BD%A6%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E5%8D%8F%E8%AE%AE%EF%BC%8CDNS%E6%9F%A5%E8%AF%A2%E8%BF%87%E7%A8%8B%E3%80%82"><span class="toc-number">2.</span> <span class="toc-text">浏览器输入URL并回车的过程以及相关协议，DNS查询过程。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E5%92%8CHTTPS%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.</span> <span class="toc-text">HTTP和HTTPS的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">加密算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Http1-0%E3%80%811-1%E3%80%812-0"><span class="toc-number">6.</span> <span class="toc-text">Http1.0、1.1、2.0</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#http1-0%E5%92%8Chttp1-1%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">6.1.</span> <span class="toc-text">http1.0和http1.1的主要区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http1-1%E5%92%8Chttp2-0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">6.2.</span> <span class="toc-text">http1.1和http2.0的主要区别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91%E5%92%8C%E8%BD%AC%E5%8F%91%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">7.</span> <span class="toc-text">重定向和转发的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cookies%E5%92%8Csession%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">8.</span> <span class="toc-text">cookies和session的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Get%E5%92%8CPost%E5%8C%BA%E5%88%AB"><span class="toc-number">9.</span> <span class="toc-text">Get和Post区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E8%A1%8C%E3%80%81%E8%AF%B7%E6%B1%82%E5%A4%B4%E3%80%81%E8%AF%B7%E6%B1%82%E4%BD%93%E3%80%81%E5%93%8D%E5%BA%94%E8%A1%8C%E3%80%81%E5%93%8D%E5%BA%94%E5%A4%B4%E3%80%81%E5%93%8D%E5%BA%94%E4%BD%93%E9%83%BD%E5%8C%85%E6%8B%AC%E4%BB%80%E4%B9%88"><span class="toc-number">10.</span> <span class="toc-text">请求行、请求头、请求体、响应行、响应头、响应体都包括什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E2%80%93"><span class="toc-number">11.</span> <span class="toc-text">&#x3D;&#x3D;———————————–&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E3%80%81UDP%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">12.</span> <span class="toc-text">TCP、UDP协议的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E6%AF%8F%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%89%E6%AC%A1%EF%BC%9F-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%A4%E6%AC%A1%E4%B8%8D%E8%A1%8C%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">TCP三次握手过程以及每次握手后的状态改变，为什么三次？ 为什么两次不行？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B%EF%BC%9A"><span class="toc-number">13.1.</span> <span class="toc-text">三次握手过程：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E4%B8%A4%E6%AC%A1%EF%BC%9F"><span class="toc-number">13.2.</span> <span class="toc-text">为什么要三次握手，而不是两次？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SYN%E6%B3%9B%E6%B4%AA%E6%94%BB%E5%87%BB"><span class="toc-number">14.</span> <span class="toc-text">SYN泛洪攻击</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E8%BF%9E%E6%8E%A5%E9%98%B6%E6%AE%B5%EF%BC%8C%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1ACK%E5%8C%85%E4%B8%A2%E5%A4%B1%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">15.</span> <span class="toc-text">三次握手连接阶段，最后一次ACK包丢失，会发生什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-number">16.</span> <span class="toc-text">四次挥手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9E%E6%8E%A5%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%EF%BC%8C%E5%85%B3%E9%97%AD%E7%9A%84%E6%97%B6%E5%80%99%E5%8D%B4%E6%98%AF%E5%9B%9B%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="toc-number">17.</span> <span class="toc-text">为什么连接的时候是三次握手，关闭的时候却是四次握手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84-TIME-WAIT-%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E7%AD%89%E5%BE%85-2MSL-%EF%BC%9F"><span class="toc-number">18.</span> <span class="toc-text">为什么客户端的 TIME-WAIT 状态必须等待 2MSL ？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E7%9C%9F%E7%9A%84%E5%8F%AF%E9%9D%A0%E5%90%97%EF%BC%9F"><span class="toc-number">19.</span> <span class="toc-text">TCP真的可靠吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E5%8D%8F%E8%AE%AE%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="toc-number">20.</span> <span class="toc-text">TCP协议如何保证可靠性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E7%9A%84%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%88%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6%EF%BC%89"><span class="toc-number">21.</span> <span class="toc-text">TCP的滑动窗口（流量控制）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E7%9A%84%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E8%BF%87%E7%A8%8B"><span class="toc-number">22.</span> <span class="toc-text">TCP的拥塞控制过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E7%B2%98%E5%8C%85%E9%97%AE%E9%A2%98"><span class="toc-number">23.</span> <span class="toc-text">TCP粘包问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP%E3%80%81UDP%E3%80%81IP%E3%80%81%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F%E4%BB%A5%E5%8F%8A%E9%87%8D%E8%A6%81%E5%AD%97%E6%AE%B5"><span class="toc-number">24.</span> <span class="toc-text">TCP、UDP、IP、以太网报文格式以及重要字段</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP"><span class="toc-number">24.1.</span> <span class="toc-text">TCP</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/06/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="无题"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2021/06/06/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="无题">无题</a><time datetime="2021-06-06T15:34:56.400Z" title="发表于 2021-06-06 23:34:56">2021-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%BB%E7%BB%93/" title="计算机网络最全面试题总结"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络最全面试题总结"/></a><div class="content"><a class="title" href="/2021/06/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%BB%E7%BB%93/" title="计算机网络最全面试题总结">计算机网络最全面试题总结</a><time datetime="2021-06-02T15:34:30.000Z" title="发表于 2021-06-02 23:34:30">2021-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/02/JVM%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93-%E9%AB%98%E9%A2%91/" title="JVM面经总结--高频"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/gallery/wallpaper/0494e945880511ebb6edd017c2d2eca2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM面经总结--高频"/></a><div class="content"><a class="title" href="/2021/06/02/JVM%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93-%E9%AB%98%E9%A2%91/" title="JVM面经总结--高频">JVM面经总结--高频</a><time datetime="2021-06-02T09:15:17.000Z" title="发表于 2021-06-02 17:15:17">2021-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/01/Java%E9%9B%86%E5%90%88%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%A6%E8%A7%A3/" title="Java集合高频面试题详解"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/gallery/wallpaper/c6ac1e46880411ebb6edd017c2d2eca2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java集合高频面试题详解"/></a><div class="content"><a class="title" href="/2021/06/01/Java%E9%9B%86%E5%90%88%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%A6%E8%A7%A3/" title="Java集合高频面试题详解">Java集合高频面试题详解</a><time datetime="2021-05-31T17:42:07.000Z" title="发表于 2021-06-01 01:42:07">2021-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="我的第一篇Blog"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/gallery/wallpaper/1146633.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇Blog"/></a><div class="content"><a class="title" href="/2021/05/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="我的第一篇Blog">我的第一篇Blog</a><time datetime="2021-05-29T17:00:31.000Z" title="发表于 2021-05-30 01:00:31">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Cyrus Gan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><p><a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://butterfly.js.org/"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin-inline:5px"target="_blank" href="https://www.jsdelivr.com/"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin-inline:5px"target="_blank" href="https://github.com/"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      placeholder: '记得留下你的昵称和联系方式....可以快速收到博主的回复哦~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="ture"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener toc scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
